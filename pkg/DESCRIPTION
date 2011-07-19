@@ -1,0 +1,10 @@
+Package: CANS.works
+Type: Package
+Title: Import, manipulate and analyze data from the Massachusetts CANS tool
+Version: 0.2
+Date: 2011-07-14
+Author: Jack Simons <jack.simons@state.ma.us>
+Maintainer: Jack Simons <jack.simons@state.ma.us>
+Description: CANS (Child and Adolescent Strengths and Needs), was developed and copyright by John S. Lyons PhD. Massachusetts uses an adaptation of the CANS in a variety of public behavioral health services, including those paid under the state Medicaid program, MassHealth. This package provides functions to (1) import into R CANS data exported from the state's web-based CANS application, and (2) to manipulate, analyze and report from the imported data. The package was created by J. Simons and is not required, endorsed, supported or warranted in any way by the Commonwealth of Massachusetts.
+License: GPL-2
+LazyLoad: yes
