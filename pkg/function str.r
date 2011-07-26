@@ -8,5 +8,5 @@
 # 254 column cans dataframe. 
 
 str <- function(x) {
-	str(x, list.length = 300)
+	str(x, list.len = 300)
 	}
