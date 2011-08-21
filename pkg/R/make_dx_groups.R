@@ -1,5 +1,12 @@
 make_dx_groups <-
 function(number.of.groups) {
+
+# Jack Simons <jack.simons@state.ma.us> 
+# Monday July 11, 2011; 10:44:07
+
+# Creates a R list in which each element corresponds to a group of diagnoses.
+# The set of diagnoses for each group should be in an Excel table, for copying.
+# Each group of diagnoses should be in an Excel column with no header.
 #   dx.list is a list that is constructed incrementally using a loop.
 
 dx.list <- rep('', number.of.groups)
