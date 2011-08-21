@@ -1,5 +1,8 @@
-check_multiple_CANS_exports <-
-function() {
+check_multiple_CANS_exports <- function() {
+
+# check multiple CANS export files
+# J. Simons <jack.simons@state.ma.us>
+# rev 11:15 AM Tuesday, July 05, 2011
 
 # The CBHI CANS export function is limited to periods of up to seven days. Therefore, CANS data 
 # over a long time period must be assembled from multiple export files representing differenct 
@@ -45,4 +48,3 @@ function() {
 	cat('\n List of files checked: \n')
 	print(file.info)
 }
-
