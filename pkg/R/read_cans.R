@@ -6,15 +6,13 @@ function(
   )
   {
 
+# Jack Simons <jack.simons@state.ma.us>
+# 2:54 PM Tuesday, July 05, 2011
+
 # Read the text file produced by the MA CBHI CANS system.
 # The function performs minimal checks on the data file prior 
 #   to import. 
-# Revised to check for record length of 254 fields.
-# Revised to permit choice of tool for which to export.
-# Revised to permit choice of status for which to export.
-# Revised to permit inserting target filename instead of using file.choose()
-# Jack Simons, <jack.simons@state.ma.us>
-# revised 2011.07.03
+
 
 # Choose the text file to import.
 if (filename=='choose'){
