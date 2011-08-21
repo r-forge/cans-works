@@ -1,6 +1,12 @@
 karpman <-
 function(cans) {
 
+# recode and deidentify CANS data for use in Hannah Karpman's analytic work
+# J. Simons jack.simons@state.ma.us
+# Wednesday July 06, 2011; 13:29:02
+
+# assumes a 254 column CANS dataframe with standard order of variables
+
 # change 3 fields from factor to date
 {
 #	date of birth
