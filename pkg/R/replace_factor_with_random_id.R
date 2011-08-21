@@ -1,5 +1,9 @@
 replace_factor_with_random_id <-
 function(cans, target_col) {
+
+# replace factor in CANS with a random identifier
+# Jack Simons <jack.simons@state.ma.us>
+# rev 2011-07-04 18:38:41 EDT
   
 # cans should be a 254 field CANS dataframe where the factor to be replaced
 # is in field indexed by target_col.
