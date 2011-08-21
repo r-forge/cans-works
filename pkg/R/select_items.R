@@ -1,15 +1,16 @@
 select_items <-
 function(cans, select.items.csv){
 
+# select CANS items
+# Jack Simons <jack.simons@state.ma.us>
+# 2:54 PM Tuesday, July 05, 2011
+
 # A function that operates on a dataframe produced by 
 #   read.cans(), and uses information in the file select.items 
 #   to create a new dataframe with selected columns. Before 
 #   selecting columns to keep, it creates a new field SED to 
 #   replace the existing field 247 which currently holds the 
 #   "end of record" character.
-
-# Jack Simons <jack.simons@state.ma.us>
-# revised 2010.05.16
 
 # Find the file for the argument select.items.csv.
 winDialog(type="okcancel", message="Click OK to open a file 
