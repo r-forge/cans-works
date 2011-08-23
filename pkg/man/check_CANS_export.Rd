@@ -1,11 +1,12 @@
 \name{check_CANS_export}
 \alias{check_CANS_export}
-%- Also NEED an '\alias' for EACH other topic documented here.
+\alias{check_multiple_CANS_exports}
+
 \title{
-%%  ~~function to do ... ~~
+Checks field length of CANS export file
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Checks field length of CANS export file
 }
 \usage{
 check_CANS_export()
