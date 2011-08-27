@@ -11,49 +11,18 @@ Checks field length of CANS export file
 \usage{
 check_CANS_export()
 }
-%- maybe also 'usage' for other objects documented here.
-\details{
-%%  ~~ If necessary, more details than the description above ~~
-}
+
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+Used for its byproducts. Results of check are reported to console.
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
-%%  ~~who you are~~
+Jack Simons <jack.simons@state.ma.us>
 }
 \note{
-%%  ~~further notes~~
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function () {
-winDialog(type = "okcancel", "Click OK to choose the delimited \n  text file to read. It must be in the format exported by the \n  CBHI CANS application.")
-txt.file <- file.choose()
-cat("\nFile to check is ", txt.file, "\n\n")
-
-rec.length <- count.fields(txt.file, sep = "|", quote = "", comment.char = "")
-cat('Minimum record length was: ', min(rec.length), '\n', sep='')
-cat('Maximum record length was: ', max(rec.length), '\n\n', sep='')
-  }
+% none at this time
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+}

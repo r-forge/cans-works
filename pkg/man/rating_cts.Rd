@@ -30,7 +30,7 @@ rating_cts(cans, histogram = TRUE)
 %% ...
 }
 \references{
-%% ~put references to the literature/web site here ~
+Jack Simons <jack.simons@state.ma.us>
 }
 \author{
 %%  ~~who you are~~

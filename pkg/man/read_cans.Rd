@@ -36,7 +36,7 @@ read_cans(tool = c("Under5", "5Over", ""), status = c("COMPLETE", "DOCUMENTED ON
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jack Simons <jack.simons@state.ma.us>
 }
 \note{
 %%  ~~further notes~~

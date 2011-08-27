@@ -36,7 +36,7 @@ make_model_formula(leftvars = 0, rightvars = 0, data)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jack Simons <jack.simons@state.ma.us>
 }
 \note{
 %%  ~~further notes~~

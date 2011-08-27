@@ -1,21 +1,26 @@
 \name{days_since_first_assessment}
 \alias{days_since_first_assessment}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
-%%  ~~function to do ... ~~
+Days since first assessment
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Converts date of assessment to days since first assessment.
+Useful de deidentification of PHI under HIPAA.
+Also useful in analysis of longitudinal data where elapsed time is important.
 }
+
 \usage{
 days_since_first_assessment(cans)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{cans}{
-%%     ~~Describe \code{cans} here~~
+A dataframe where one column is date to be transformed
 }
 }
+
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
@@ -30,7 +35,7 @@ days_since_first_assessment(cans)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jack Simons <jack.simons@state.ma.us>
 }
 \note{
 %%  ~~further notes~~

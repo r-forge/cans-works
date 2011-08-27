@@ -33,7 +33,7 @@ select_items(cans, select.items.csv)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jack Simons <jack.simons@state.ma.us>
 }
 \note{
 %%  ~~further notes~~

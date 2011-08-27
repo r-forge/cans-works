@@ -33,7 +33,7 @@ replace_factor_with_random_id(cans, target_col)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Jack Simons <jack.simons@state.ma.us>
 }
 \note{
 %%  ~~further notes~~
