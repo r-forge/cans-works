@@ -29,14 +29,11 @@ We recode diagnosis into general diagnostic groups to reduce cell size for dx co
 Returns 
 }
 \references{
-%% ~put references to the literature/web site here ~
 }
+
 \author{
 <jack.simons@state.ma.us>
 }
 
 \examples{
 }
-
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

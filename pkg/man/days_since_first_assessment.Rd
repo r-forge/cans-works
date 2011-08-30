@@ -22,8 +22,8 @@ A dataframe where one column is date to be transformed
 }
 
 \details{
-%%  ~~ If necessary, more details than the description above ~~
 }
+
 \value{
 %%  ~Describe the value returned
 %%  If it is a LIST, use
@@ -47,9 +47,8 @@ Jack Simons <jack.simons@state.ma.us>
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+
+# no examples at this time
 
 ## The function is currently defined as
 function (cans) {
@@ -75,7 +74,3 @@ init.date <- date.key[match(cans[, 2], date.key[, 1]), 2]
 days <- as.numeric(cans[, 32]-init.date)
   }
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

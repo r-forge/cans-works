@@ -1,9 +1,10 @@
 \name{get_one_CANS_per_person}
 \alias{get_one_CANS_per_person}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Get one CANS record per person
 }
+
 \description{
 Allows you to choose first or last CANS record for each individual
 }
