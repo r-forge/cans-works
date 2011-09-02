@@ -1,69 +1,47 @@
 \name{make_model_formula}
 \alias{make_model_formula}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
-%%  ~~function to do ... ~~
+Constructs a model formula
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Constructs a model formula based on two vectors of integers, which contain the indices 
+of the dataframe columns to be selected in the left side and right side of the model.
 }
+
 \usage{
 make_model_formula(leftvars = 0, rightvars = 0, data)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{leftvars}{
-%%     ~~Describe \code{leftvars} here~~
+a vectors of integers, which contain the indices of the dataframe columns 
+to be selected in the left side, or zero if nothing on the left side
 }
   \item{rightvars}{
-%%     ~~Describe \code{rightvars} here~~
+a vectors of integers, which contain the indices of the dataframe columns 
+to be selected in the right side, or zero if nothing on the right side
 }
   \item{data}{
-%%     ~~Describe \code{data} here~~
+the dataframe on which the model will be used
 }
 }
+
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+Note that the formula uses the + operator for all variables; user must make any needed 
+edits to the model formula manually. To make either side of the formula blank, use 0 for the index value.
+The "data" parameter denotes the dataframe on which the model will be used.
 }
+
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+Returns a character string
 }
-\references{
-%% ~put references to the literature/web site here ~
-}
+
 \author{
 Jack Simons <jack.simons@state.ma.us>
 }
-\note{
-%%  ~~further notes~~
-}
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function(leftvars=0, rightvars=0, data) {
-leftstring <- paste(names(data)[leftvars], collapse=" + ")
-# print(c("leftvars:", paste(leftvars, collapse=" ")))
-# print(c("leftstring:", leftstring))
-rightstring <- paste(names(data)[rightvars], collapse=" + ")
-# print(c("rightvars:", paste(rightvars, collapse=" ")))
-# print(c("rightstring:", rightstring))
-model<-paste(leftstring, " ~ ", rightstring)
-model}
+## none at this time
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

@@ -20,7 +20,7 @@ in any way by the Commonwealth of Massachusetts.
 \details{
 }
 
-\tabular{ll}{
+{
 Package: \tab CANSworks\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
