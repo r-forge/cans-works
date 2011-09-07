@@ -20,15 +20,6 @@ in any way by the Commonwealth of Massachusetts.
 \details{
 }
 
-{
-Package: \tab CANSworks\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2011-08-18\cr
-License: \tab What license is it under?\cr
-LazyLoad: \tab yes\cr
-}
-
 \author{
 Jack Simons <jack.simons@state.ma.us>
 }
@@ -37,7 +28,6 @@ Jack Simons <jack.simons@state.ma.us>
 www.praedfoundtation.org
 www.mass.gov/masshealth/cans
 }
-
 
 \examples{
 % none at this time
