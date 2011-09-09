@@ -16,7 +16,7 @@ make_model_formula(leftvars = 0, rightvars = 0, data)
 
 \arguments{
   \item{leftvars}{
-a vectors of integers, which contain the indices of the dataframe columns 
+a vector of integers, which contain the indices of the dataframe columns 
 to be selected in the left side, or zero if nothing on the left side
 }
   \item{rightvars}{

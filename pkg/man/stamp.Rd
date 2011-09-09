@@ -1,57 +1,32 @@
 \name{stamp}
 \alias{stamp}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
-%%  ~~function to do ... ~~
+convenient author contact info and timestamp
 }
-\description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+\description{
+shortcut for documenting scripts
 }
-\usage{
+\usage{
 stamp(author = "Jack Simons <jack.simons@state.ma.us>")
 }
-%- maybe also 'usage' for other objects documented here.
-\arguments{
+\arguments{
   \item{author}{
-%%     ~~Describe \code{author} here~~
+author contact info
 }
 }
-\details{
-%%  ~~ If necessary, more details than the description above ~~
+\details{
 }
-\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+\value{
+returns a character string
 }
-\references{
-%% ~put references to the literature/web site here ~
+\references{
 }
-\author{
+\author{
 Jack Simons <jack.simons@state.ma.us>
 }
-\note{
-%%  ~~further notes~~
+\note{
 }
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+\examples{
+% none at this time
 }
-\examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function (author = 'Jack Simons <jack.simons@state.ma.us>') {
-  cat(author, " \n", format(Sys.time(), "\%A \%B \%d, \%Y; \%H:\%M:\%S"), sep='')
-  }
-}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

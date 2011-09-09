@@ -1,74 +1,48 @@
 \name{recode_dx}
 \alias{recode_dx}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
-%%  ~~function to do ... ~~
+Recode diagnoses into dx groups
 }
+
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Consolidates diagnoses into a few diagnostic groups, useful analytically and
+also for HIPAA purposes to reduce risk of reidentification when cells are small
 }
+
 \usage{
 recode_dx(cans, dx.col = 90, dx.list)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{cans}{
-%%     ~~Describe \code{cans} here~~
+cans is a standard CANS dataframe
 }
   \item{dx.col}{
-%%     ~~Describe \code{dx.col} here~~
+cans.dx.col, an integer, is the column of diagnoses to recode
 }
   \item{dx.list}{
-%%     ~~Describe \code{dx.list} here~~
+dx.list is a list of dx groupings created with make_dx_groups()
 }
 }
+
 \details{
-%%  ~~ If necessary, more details than the description above ~~
 }
+
 \value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
+returns a vector, a factor of diagnostic groups 
 }
+
 \references{
-%% ~put references to the literature/web site here ~
 }
+
 \author{
 Jack Simons <jack.simons@state.ma.us>
 }
+
 \note{
-%%  ~~further notes~~
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-}
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
-
-## The function is currently defined as
-function(cans, dx.col=90, dx.list) {
-# cans is a standard CANS dataframe and cans.dx.col, an integer, is the column of diagnoses to recode.
-# dx.list is a list of dx groupings created with make_dx_groups().
-# A vector of diagnostic groups is returned, with length = nrow of the CANS database.
-
-dx <- as.character(cans[, dx.col])
-dx <- as.data.frame(dx, stringsAsFactors = FALSE)
-
-for (dx.list.item in 1:length(dx.list)) {
-  dx$group[dx$dx \%in\% dx.list[[dx.list.item]]] <- paste('grp', dx.list.item, sep='')
-  }
-
-head(dx, 50)
-  }
+@ none at this time
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

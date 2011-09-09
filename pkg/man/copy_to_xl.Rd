@@ -5,7 +5,8 @@
 Copy R object to Excel
 }
 \description{
-Copy R object to clipboard in format that pastes nicely in Excel
+Copy R object to clipboard in format that pastes nicely in Excel. 
+See the R reference card bu Tom Short
 }
 
 \usage{

@@ -4,6 +4,7 @@
 \title{
 Creates a R list in which each element corresponds to a group of diagnoses
 }
+
 \description{
 Creates an R list in which each element corresponds to a group of diagnoses.
 The set of diagnoses for each group should be in an Excel table, for copying.
