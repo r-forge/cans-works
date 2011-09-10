@@ -2,8 +2,8 @@
 \alias{paste_from_xl}
 
 \title{paste_from_xl
-
 }
+
 \description{Creates an R object from the Windows clipboard. See Tom Short's R reference card
 }
 
