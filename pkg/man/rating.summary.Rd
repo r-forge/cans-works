@@ -35,8 +35,8 @@ an integer indicating the column number identifying the date of observation}
 }
 
 \details{
-Note that for records where no items are rated, the actionable ration will
-be NaN, and the mean will be NA.
+Note that for records where no items are rated (e.g. documented on paper, 
+incomplete but final) the actionable ration will be NaN, and the mean will be NA.
 }
 
 \value{
