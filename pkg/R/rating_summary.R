@@ -22,5 +22,5 @@ all.sum <- sum(zeros, ones, twos, threes, NAs)
 means <- round(rowMeans(cans[,items], na.rm = TRUE), digits = 2)
 
 # Create and return a dataframe of these values.
-rating.cts <- data.frame(zeros, ones, twos, threes, NAs,all.sum,act.ratio, means)
+data.frame(zeros, ones, twos, threes, NAs,all.sum,act.ratio, means)
 }
