@@ -12,7 +12,8 @@ function(cans, obs.id = 1, person.id = 2, obs.date = 32, items = 54:64) {
 # be NaN, and the mean will be NA.
 
 person <- cans[, person.id]
-observation <- cans[, obs.id]   
+observation <- cans[, obs.id]
+date <- cans[, obs.date]
 zeros <- rowSums(cans[,items] == 0, na.rm=TRUE)
 ones <- rowSums(cans[,items] == 1, na.rm=TRUE)
 twos <- rowSums(cans[,items] == 2, na.rm=TRUE)
@@ -23,5 +24,5 @@ all.sum <- sum(zeros, ones, twos, threes, NAs)
 means <- round(rowMeans(cans[,items], na.rm = TRUE), digits = 2)
 
 # Create and return a dataframe of these values.
-data.frame(person, observation, zeros, ones, twos, threes, NAs, all.sum, act.ratio, means)
+data.frame(person, observation, date, zeros, ones, twos, threes, NAs, all.sum, act.ratio, means)
 }
