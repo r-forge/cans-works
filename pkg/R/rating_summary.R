@@ -1,5 +1,5 @@
 rating.summary <-
-function(cans, obs.id = 1, person.id = 2, items = 54:64) {
+function(cans, obs.id = 1, person.id = 2, obs.date = 32, items = 54:64) {
 
 # Summarizes ratings for selected group of items, record by record.
 # Computes the number of items with values of 0,1,2,3, and 

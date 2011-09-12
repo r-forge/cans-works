@@ -13,7 +13,7 @@ to total ratings and computes the mean rating.
 }
 
 \usage{
-rating.summary(cans, id = 2, items = 54:64)
+cans, obs.id = 1, person.id = 2, obs.date = 32, items = 54:64
 }
 
 \arguments{
@@ -30,6 +30,8 @@ an integer indicating the column number identifying the person
 	\item{obs.id}{
 an integer indicating the column number identifying the observation 
 }
+	\item{obs.date}{
+an integer indicating the column number identifying the date of observation}
 }
 
 \details{
