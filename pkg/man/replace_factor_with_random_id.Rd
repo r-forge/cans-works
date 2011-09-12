@@ -47,4 +47,4 @@ Jack Simons <jack.simons@state.ma.us>
 
 \examples{
 % none at this time
-  }
+}

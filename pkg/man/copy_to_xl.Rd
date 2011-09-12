@@ -4,6 +4,7 @@
 \title{
 Copy R object to Excel
 }
+
 \description{
 Copy R object to clipboard in format that pastes nicely in Excel. 
 See the R reference card bu Tom Short
@@ -27,5 +28,5 @@ Jack Simons <jack.simons@state.ma.us>
 }
 
 \examples{
-no examples at present
+# no examples at present
 }

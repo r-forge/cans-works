@@ -34,3 +34,7 @@ Needs rewriting to be more general.
 \author{
 Jack Simons <jack.simons@state.ma.us>
 }
+
+\examples{
+# no examples at this time
+}

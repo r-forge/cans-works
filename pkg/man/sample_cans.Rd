@@ -1,19 +1,16 @@
 \name{sample_cans}
 \alias{sample_cans}
 
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+sample CANS
 }
 
-\description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+\description{Samples records from a CANS dataframe
 }
 
 \usage{
 sample_cans(cans, sample.size)
 }
-%- maybe also 'usage' for other objects documented here.
 
 \arguments{
   \item{cans}{
@@ -25,7 +22,6 @@ sample.size is the number of records you want to get
 }
 
 \details{
-%%  ~~ If necessary, more details than the description above ~~
 }
 
 \value{

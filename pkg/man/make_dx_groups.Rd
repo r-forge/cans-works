@@ -30,7 +30,6 @@ Creates an R list in which each element corresponds to a group of diagnoses.
 Jack Simons <jack.simons@state.ma.us>
 }
 
-
 \examples{
 # none at this time
 }

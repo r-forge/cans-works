@@ -26,7 +26,7 @@ A character vector of same length as nrow of the dataframe from which it was der
 }
 
 \references{
-http://cans-works.r-forge.r-project.org/
+https://r-forge.r-project.org/projects/cans-works/
 }
 
 \author{

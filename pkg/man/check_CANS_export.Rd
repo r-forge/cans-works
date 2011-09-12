@@ -22,6 +22,10 @@ Used for its byproducts. Results of check are reported to console.
 Jack Simons <jack.simons@state.ma.us>
 }
 
+\references{
+https://r-forge.r-project.org/projects/cans-works/
+}
+
 \note{
 }
 
