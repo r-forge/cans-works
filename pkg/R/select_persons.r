@@ -16,4 +16,8 @@ select_persons <- function (cans, observations, person.id = 2) {
 
 persons <- as.data.frame(table(cans[, person.id]))
 persons <- persons[rev(order(persons[, 2])), ]
+matching_persons <- !is.na(match(persons[, 2], observations))
+persons <- persons[matching_persons==1, ]
+colnames(persons) <- c('person_id', 'number_of_obs')
+persons
 }
