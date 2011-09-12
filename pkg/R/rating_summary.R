@@ -1,5 +1,5 @@
 rating.summary <-
-function(cans, items=54:64) {;
+function(cans, obs.id = 1, person.id = 2, items = 54:64) {
 
 # Summarizes ratings for selected group of items, record by record.
 # Computes the number of items with values of 0,1,2,3, and 
@@ -11,7 +11,8 @@ function(cans, items=54:64) {;
 # Note that for records where no items are rated, the actionable ration will
 # be NaN, and the mean will be NA.
 
-items<- c(54:64)    
+person <- cans[, person.id]
+observation <- cans[, obs.id]   
 zeros <- rowSums(cans[,items] == 0, na.rm=TRUE)
 ones <- rowSums(cans[,items] == 1, na.rm=TRUE)
 twos <- rowSums(cans[,items] == 2, na.rm=TRUE)
@@ -22,5 +23,5 @@ all.sum <- sum(zeros, ones, twos, threes, NAs)
 means <- round(rowMeans(cans[,items], na.rm = TRUE), digits = 2)
 
 # Create and return a dataframe of these values.
-data.frame(zeros, ones, twos, threes, NAs,all.sum,act.ratio, means)
+data.frame(person, observation, zeros, ones, twos, threes, NAs, all.sum, act.ratio, means)
 }

@@ -13,10 +13,9 @@ to total ratings and computes the mean rating.
 }
 
 \usage{
-rating.summary(cans, items = 54:64)
+rating.summary(cans, id = 2, items = 54:64)
 }
 
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{cans}{
 a CANS dataframe
@@ -24,6 +23,12 @@ a CANS dataframe
   \item{items}{
 an integer vector containing the column numbers for the CANS
 items to be summarized
+}
+	\item{person.id}{
+an integer indicating the column number identifying the person
+}
+	\item{obs.id}{
+an integer indicating the column number identifying the observation 
 }
 }
 
