@@ -21,7 +21,7 @@ threes <- rowSums(cans[,items] == 3, na.rm=TRUE)
 NAs <- rowSums(is.na(cans[,items]))
 act.ratio <- round((twos+threes)/(zeros+ones+twos+threes),2)
 all.sum <- sum(zeros, ones, twos, threes, NAs)
-means <- round(rowMeans(cans[,items], na.rm = TRUE), digits = 2)
+means <- round(rowMeans(cans[,items], na.rm = TRUE), digits = 2)*10
 
 # Create and return a dataframe of these values.
 data.frame(person, observation, date, zeros, ones, twos, threes, NAs, all.sum, act.ratio, means)
