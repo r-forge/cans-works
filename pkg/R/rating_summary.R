@@ -9,6 +9,7 @@ function(cans, obs.id = 1, person.id = 2, obs.date = 32, items = c(54:64, 66:75,
 # counting for each record the number of zeros, ones, twos, threes, NAs,
 # percent of actionable items (2s and 3s) to total, mean rating (times ten),
 # and squareroot of mean rating (transforms distribution to be closer to normal).
+# Then scale this value so its possible range is 0 to 10.
 # Note that for records where no items are rated, the actionable percent will
 # be NaN, and the mean and its squareroot will be NA.
 
@@ -23,7 +24,7 @@ NAs <- rowSums(is.na(cans[,items]))
 act.pct <- 100 * (twos + threes) / (zeros + ones + twos + threes)
 all.sum <- sum(zeros, ones, twos, threes, NAs)
 means <- 10 * rowMeans(cans[,items], na.rm = TRUE)
-out <- means ^ 0.5
+out <- (means ^ 0.5) * 10 / sqrt(30)
 
 # Create and return a dataframe of these values.
 data.frame(person, observation, date, zeros, ones, twos, threes, NAs, all.sum, act.pct, means, out)
