@@ -7,9 +7,10 @@ function(cans, obs.id = 1, person.id = 2, obs.date = 32, items = c(54:64, 66:75,
 # to total ratings and computes the mean rating. 
 # Returns a dataframe of same nrow as the input dataframe, with 7 columns,
 # counting for each record the number of zeros, ones, twos, threes, NAs,
-# ration of actionable items (2s and 3s) to total, and mean rating.
-# Note that for records where no items are rated, the actionable ration will
-# be NaN, and the mean will be NA.
+# percent of actionable items (2s and 3s) to total, mean rating (times ten),
+# and squareroot of mean rating (transforms distribution to be closer to normal).
+# Note that for records where no items are rated, the actionable percent will
+# be NaN, and the mean and its squareroot will be NA.
 
 person <- cans[, person.id]
 observation <- cans[, obs.id]
@@ -19,10 +20,11 @@ ones <- rowSums(cans[,items] == 1, na.rm=TRUE)
 twos <- rowSums(cans[,items] == 2, na.rm=TRUE)
 threes <- rowSums(cans[,items] == 3, na.rm=TRUE)
 NAs <- rowSums(is.na(cans[,items]))
-act.ratio <- (twos + threes) / (zeros + ones + twos + threes)
+act.pct <- 100 * (twos + threes) / (zeros + ones + twos + threes)
 all.sum <- sum(zeros, ones, twos, threes, NAs)
-means <- rowMeans(cans[,items], na.rm = TRUE)*10
+means <- 10 * rowMeans(cans[,items], na.rm = TRUE)
+out <- means ^ 0.5
 
 # Create and return a dataframe of these values.
-data.frame(person, observation, date, zeros, ones, twos, threes, NAs, all.sum, act.ratio, means)
+data.frame(person, observation, date, zeros, ones, twos, threes, NAs, all.sum, act.pct, means, out)
 }
