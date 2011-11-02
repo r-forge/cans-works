@@ -1,55 +1,56 @@
-\name{plot_cans}
-\alias{plot_cans}
+\name{plot_CANS}
+\alias{plot_CANS}
 
 \title{
-lattice xyplot of CANS from sample of individuals
+Plot a series of CANS outcomes for a random sample of children
 }
 
 \description{
-Create plots similar to those of Singer and Willett chs 3 and 4
+Creates a plot of trajectories over time, conditioned over individuals
 }
 
 \usage{
-plotCANS (data, sample.size=24, show.ID=false, 
-ID.column=2, date.column=32,  layout.plan=c(6,4,1),
-groups.column=31, use.color=T, ...)
+plotCANS(data, sample.size = 24, show.ID = FALSE, ID.column = 2, date.column = 32, layout.plan = c(6, 4, 1), groups.column = 31, use.color = T, ...)
 }
 
 \arguments{
   \item{data}{
-the CANS data frame 
+the CANS data frame
+}
+  \item{sample.size}{
+the number of individuals to be displayed in the lattice display
+}
+  \item{show.ID}{
+logical value; should be set to TRUE if you want the ID to appear 
+in the strip plot; default is FALSE for privacy to prevent display of 
+client identifier 
 }
   \item{ID.column}{
-the column containing the individual ID (a factor)
+index of the column containing the individual ID (a factor)
 }
   \item{date.column}{
-the time variable, should be a vector of dates
+index of the time variable, should be a vector of dates
 }
-	\item{group.column}{
-the column containing the grouping variable, usually the service or provider
+  \item{layout.plan}{
+an integer vector of length 3; the panel layout (see lattice documentation)
 }
-	\item{show.ID}{
-logical value, should be set to TRUE if you want the ID to appear 
-in the strip plot; default is FALSE for privacy to prevent display of 
-client identifier;
-	\item{use.color}{
-logical value, set to F so points will display as symbols instead
-of colored points, for monochrome printing
+  \item{groups.column}{
+index of grouping variable; this would usually be the column denoting the 
+service or provider associated with the CANS data point
 }
-	\item{layout.plan}{
-numeric vector of length=3 defines number of rows, columns, pages 
-of the panel layout (see lattice documentation)
-}	
-	\item{...}{
+  \item{use.color}{
+logical, set to F so points will display as symbols
+}
+  \item{\dots}{
 allows you to pass additional parameters to xyplot()
 }
-
+}
 
 \details{
 }
 
 \value{
-returns a lattice object and sends it to the print method
+returns a printable trellis object as described in Lattice documentation
 }
 
 \references{
@@ -62,6 +63,9 @@ Jack Simons <jack.simons@state.ma.us>
 \note{
 }
 
+\seealso{
+}
+
 \examples{
-% none at this time
+## no examples yet
 }

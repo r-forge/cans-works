@@ -1,6 +1,6 @@
 #  function plotCANS
 
-plotCANS <- function (data, 
+plot_CANS <- function (data, 
                       sample.size=24, show.ID=FALSE, 
                       ID.column=2, date.column=32,
                       layout.plan=c(6,4,1),
