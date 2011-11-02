@@ -24,12 +24,14 @@ plotCANS <- function (data,
 require(lattice)
 
 # set to display points in black and white
-dev.off()
-trellis.device(color=use.color)
+if (dev.cur()==1) trellis.device(color=use.color) else {
+  dev.off()
+  trellis.device(color=use.color)
+}
 
 # get observations from a sample of individuals
-sample.set <- sample(dat$V2, sample.size)
-sample.set <- subset(dat, dat$V2 %in% sample.set)
+sample.set <- sample(data$V2, sample.size)
+sample.set <- subset(data, data$V2 %in% sample.set)
 
 plt <- xyplot(out ~ V32 | if (show.ID) factor(V2) else V2, 
        data=sample.set,
