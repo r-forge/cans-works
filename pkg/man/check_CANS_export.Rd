@@ -1,6 +1,5 @@
 \name{check_CANS_export}
 \alias{check_CANS_export}
-\alias{check_multiple_CANS_exports}
 
 \title{
 Checks field length of CANS export file
