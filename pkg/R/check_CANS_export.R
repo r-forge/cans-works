@@ -1,5 +1,4 @@
-check_CANS_export <-
-function () {
+check_CANS_export <- function () {
 
 # checks field length of CANS export file
 # J. Simons <jack.simons@state.ma.us>
