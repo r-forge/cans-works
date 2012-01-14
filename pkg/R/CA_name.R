@@ -8,7 +8,7 @@ show.org=TRUE,
 ###	logical, whether to include org
 firstname.col = 3,
 ### numeric, column index for firstname
-lastname.col = 4
+lastname.col = 4,
 ### numeric, column index for lastname
 org.col = 5
 ### numeric, column index for organization

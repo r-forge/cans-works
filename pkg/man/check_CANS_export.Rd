@@ -1,33 +1,16 @@
-\name{check_CANS_export}
-\alias{check_CANS_export}
-
-\title{
-Checks field length of CANS export file
-}
-
-\description{
-Checks field length of CANS export file
-}
-
-\usage{
-check_CANS_export()
-}
-
-\value{
-Used for its byproducts. Results of check are reported to console.
-}
-
-\author{
-Jack Simons <jack.simons@state.ma.us>
-}
-
-\references{
-https://r-forge.r-project.org/projects/cans-works/
-}
-
-\note{
-}
-
-\examples{
-% none at this time
-}
+\name{check_CANS_export}
+\alias{check_CANS_export}
+\title{check CANS export}
+
+\usage{
+check_CANS_export()
+}
+
+
+
+\author{Jack Simons <jack.simons@state.ma.us>}
+
+
+
+
+

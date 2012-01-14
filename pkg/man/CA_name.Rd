@@ -7,13 +7,15 @@ CA_name(x,
 show.name = TRUE,
 show.org = TRUE,
 firstname.col = 3,
+lastname.col = 4,
 org.col = 5)
 }
 \arguments{
   \item{x}{the CANS dataframe }
   \item{show.name}{logical, whether to include name}
   \item{show.org}{logical, whether to include org}
-  \item{firstname.col}{numeric, column index for lastname}
+  \item{firstname.col}{numeric, column index for firstname}
+  \item{lastname.col}{numeric, column index for lastname}
   \item{org.col}{numeric, column index for organization}
 }
 
